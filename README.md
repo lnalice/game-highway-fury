@@ -3,6 +3,8 @@
 > Python과 Pygame만으로 만든 탑다운 고속도로 레이싱 게임
 >
 > **Cursor AI로 제작** - 대화형 AI 페어 프로그래밍을 통해 설계, 구현, 모듈화까지 진행
+>
+> **[브라우저에서 바로 플레이](https://lnalice.github.io/cursor-highway-fury/)**
 
 ![메인 메뉴](./screenshots/menu.png)
 

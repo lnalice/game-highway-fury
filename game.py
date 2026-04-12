@@ -624,3 +624,15 @@ class Game:
             pygame.display.flip()
         pygame.quit()
         sys.exit()
+
+    async def run_async(self):
+        """pygbag-compatible async game loop for browser execution."""
+        import asyncio
+        while True:
+            dt = min(self.clock.tick(FPS) / 1000.0, 0.05)
+            if not self._handle_events():
+                break
+            self.update(dt)
+            self.draw()
+            pygame.display.flip()
+            await asyncio.sleep(0)
